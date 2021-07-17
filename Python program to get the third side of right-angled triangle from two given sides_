@@ -1,0 +1,81 @@
+{
+ "cells": [
+  {
+   "cell_type": "markdown",
+   "metadata": {},
+   "source": [
+    "### Python program to get the third side of right-angled triangle from two given sides."
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "import numpy as np\n",
+    "import math\n",
+    "\n",
+    "\n",
+    "class Right_Angled_Triangle:\n",
+    "    def Hypotenuse_Side(self):\n",
+    "        Oppo_Side=float(input(\"Enter the value of Opposite Side : \"))\n",
+    "        Adja_Side=float(input(\"Enter the value of Adjacent Side : \"))\n",
+    "        Hypo_Side=(math.pow(Oppo_Side,2) + math.pow(Adja_Side,2))\n",
+    "        print(45*\"-\",\"\\nThe Value of Hypotenuse Side is : \",np.sqrt(Hypo_Side),sep=\"\")\n",
+    "    def Adjacent_Side(self):\n",
+    "        Oppo_Side=float(input(\"Enter the value of Opposite Side : \"))\n",
+    "        Hypo_Side=float(input(\"Enter the value of Hypotenuse Side : \"))\n",
+    "        Adja_Side=(math.pow(Hypo_Side,2) - math.pow(Oppo_Side,2))\n",
+    "        print(45*\"-\",\"\\nThe Value of Adjacent Side is : \",np.sqrt(Adja_Side),sep=\"\")            \n",
+    "    def Opposite_Side(self):\n",
+    "        Adja_Side=float(input(\"Enter the value of Adjacent Side : \"))\n",
+    "        Hypo_Side=float(input(\"Enter the value of Hypotenuse Side : \"))\n",
+    "        Oppo_Side=(math.pow(Hypo_Side,2) - math.pow(Adja_Side,2))\n",
+    "        print(45*\"-\",\"\\nThe Value of Opposite Side is : \",np.sqrt(Oppo_Side),sep=\"\")\n",
+    "ob=Right_Angled_Triangle()\n",
+    "result=int(input(\"To find the value of Hypotenuse Side, Press 1  \"\n",
+    "                 \"\\nTo find the value of Adjacent Side, Press 2  \"\n",
+    "                \"\\nTo find the value of Opposide Side, Press 3  \"\n",
+    "                  \"\\n---------------------------------------------\"\n",
+    "                 \"\\nPlease Enter : \"))\n",
+    "if result == 1:\n",
+    "    ob.Hypotenuse_Side()\n",
+    "elif result == 2:\n",
+    "    ob.Adjacent_Side()\n",
+    "elif result == 3:\n",
+    "    ob.Opposite_Side()\n",
+    "else:\n",
+    "    print(\"You Entered Wrong Digit, Please Try Again\")\n"
+   ]
+  },
+  {
+   "cell_type": "code",
+   "execution_count": null,
+   "metadata": {},
+   "outputs": [],
+   "source": []
+  }
+ ],
+ "metadata": {
+  "kernelspec": {
+   "display_name": "Python 3",
+   "language": "python",
+   "name": "python3"
+  },
+  "language_info": {
+   "codemirror_mode": {
+    "name": "ipython",
+    "version": 3
+   },
+   "file_extension": ".py",
+   "mimetype": "text/x-python",
+   "name": "python",
+   "nbconvert_exporter": "python",
+   "pygments_lexer": "ipython3",
+   "version": "3.8.5"
+  }
+ },
+ "nbformat": 4,
+ "nbformat_minor": 4
+}
